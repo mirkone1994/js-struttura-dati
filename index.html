@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <div id="cards">
-    </div>
-    <div id="cards2">
+    <select id="filter">
+        <option selected value="all">Tutte</option>
+        <option value="id">Id</option>
+        <option value="name">Nome</option>
+        <option value="cmc">CMC</option>
+        <option value="cardType">Tipo carta</option>
+        <option value="subType">Sottotipo carta</option>
+        <option value="constitution">Costituzione</option>
+        <option value="strength">Forza</option>
+    </select>
+    <input type="text" id="search" placeholder="Scrivi..." class="d-none">
+    <button id="button">Filtra</button>
+    <hr>
+    <div id="cards" class="border border-primary rounded">
     </div>
     <script src="./js/script.js"></script>
 </body>
