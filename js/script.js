@@ -184,9 +184,11 @@ const renderDeck = (deck, targetElement) => {
         const currentCardTemplate = createCardTemplate(currentCard);
         deckTemplate += currentCardTemplate;
     }
+    targetElement.innerHTML = deckTemplate;
 }
 
 const cardSection = document.getElementById("cards");
+renderDeck(deck, cardSection);
 let deckTemplate = "";
 for (let i = 0; i < deck.length; i++) {
     const currentCard = deck[i];
